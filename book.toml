@@ -1,0 +1,6 @@
+[book]
+authors = ["Lawrence Laz"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Zig for C#/.NET Developers"

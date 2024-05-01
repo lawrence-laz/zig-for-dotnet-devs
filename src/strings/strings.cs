@@ -22,4 +22,11 @@ public class Strings
         Assert.Equal("Hello, world!", stringBuilder.ToString());
     }
 
+    [Fact]
+    public void Contains()
+    {
+        var hello = "Hello, world!";
+        Assert.True(hello.Contains("Hello"));
+        Assert.False(hello.Contains("Goodbye"));
+    }
 }

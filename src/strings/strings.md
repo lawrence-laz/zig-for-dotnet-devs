@@ -31,3 +31,19 @@ const world = ", world!";
 const hello_world = try std.mem.concat(std.testing.allocator, u8, &.{ hello, world });
 ```
 
+## Contains
+
+```cs
+// C#
+var hello = "Hello, world!";
+hello.Contains("Hello") // True
+hello.Contains("Goodbye") // False
+```
+
+```rs
+// Zig
+const hello = "Hello, world!";
+std.mem.containsAtLeast(u8, hello, 1, "Hello") // True
+std.mem.containsAtLeast(u8, hello, 1, "Goodbye") // False
+```
+
